@@ -35,7 +35,7 @@ for row in satcat.readlines()[1:]:
         satcat_nums += [row.split("\t")[1]]
 satellites = []
 #We don't want to overload Celestrak, so we're going to get the data and then save to a file.
-#Change this to true
+#Change this to true if you want to grab the TLE files anew.
 fetch_data = False
 if(fetch_data):
     for ident in satcat_nums:
